@@ -10,6 +10,8 @@ from bot import bot, Var, bot_loop, sch, LOGS, ffQueue, ffLock, ffpids_cache, ff
 from bot.core.auto_animes import fetch_animes
 from bot.core.func_utils import clean_up, new_task, editMessage
 from bot.modules.up_posts import upcoming_animes
+import pyrogram.utils
+pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 
 @bot.on_message(command('restart') & user(Var.ADMINS))
 @new_task
