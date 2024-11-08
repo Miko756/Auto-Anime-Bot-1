@@ -10,8 +10,8 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import logging
 
 # Initialize bot, logging, scheduler, and other resources
-bot = Client("auto_anime_bot", api_id="YOUR_API_ID", api_hash="YOUR_API_HASH", bot_token="YOUR_BOT_TOKEN")
-Var = type("Var", (), {"ADMINS": [123456789]})  # Replace with actual admin IDs
+bot = Client("auto_anime_bot", api_id="27692015", api_hash="25278a8394b5914ee1b8d6a6c79d572d", bot_token="7716433955:AAFyRm41MWU-K0MslxcRWvE5tOYFMCS3pO8")
+Var = type("Var", (), {"ADMINS": [7092511418]})  # Replace with actual admin IDs
 LOGS = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 sch = AsyncIOScheduler()
